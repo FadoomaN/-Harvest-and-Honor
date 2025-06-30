@@ -1,4 +1,4 @@
 # -Harvest-and-Honor
 fadi likes bbc
-          
-:D EI===8
+     ___    
+:D EI   8
