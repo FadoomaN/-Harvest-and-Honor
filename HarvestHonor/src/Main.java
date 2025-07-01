@@ -16,7 +16,6 @@ public class Main
     public static Window window;
     public static MainPanel panel;
     public static Building building;
-    public static 
 
     public static void main(String[] args)
     {
