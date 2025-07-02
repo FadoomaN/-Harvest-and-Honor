@@ -3,7 +3,6 @@ package Main;
 import UI.MainPanel;
 import UI.Tower;
 import UI.Window;
-import Units.Building;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,7 +17,6 @@ public class Main
 
     public static Window window;
     public static MainPanel panel;
-    public static Building building;
     public static int timerCounter = 0;
     public static int panelSizeX = 1500, panelSizeY = 900;
     public static Tower tower = new Tower();
@@ -27,7 +25,6 @@ public class Main
     {
         window = new Window();
         panel = new MainPanel();
-        building = new Building();
 
         setupGame();
     }
@@ -37,7 +34,6 @@ public class Main
         window.add(panel);
         panel.setup();
         window.setup();
-        building.setup();
         Thread timer = new Thread(new Runnable()
         {
             public void run()
