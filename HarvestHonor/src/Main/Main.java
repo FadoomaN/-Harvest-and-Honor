@@ -4,6 +4,7 @@ import UI.House;
 import UI.MainPanel;
 import UI.Tower;
 import UI.Window;
+import  UI.Menu;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,12 +23,15 @@ public class Main
     public static int timerCounter = 0;
     public static int panelSizeX = 1500, panelSizeY = 900;
     public static Tower tower = new Tower();
+    public static Menu gameMenu;
 
     public static void main(String[] args)
     {
         window = new Window();
         panel = new MainPanel();
         house = new House();
+        gameMenu = new Menu();
+
 
         setupGame();
     }
