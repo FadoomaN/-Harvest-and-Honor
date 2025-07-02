@@ -1,7 +1,7 @@
+import UI.House;
 import UI.MainPanel;
 import UI.Window;
 import  UI.Menu;
-import Units.Building;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,14 +16,14 @@ public class Main
 
     public static Window window;
     public static MainPanel panel;
-    public static Building building;
+    public static House building;
     public static Menu menu;
 
     public static void main(String[] args)
     {
         window = new Window();
         panel = new MainPanel();
-        building = new Building();
+        building = new House();
         menu = new Menu();
 
         setupGame();
