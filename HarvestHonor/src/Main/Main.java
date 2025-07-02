@@ -1,5 +1,6 @@
 package Main;
 
+import UI.House;
 import UI.MainPanel;
 import UI.Tower;
 import UI.Window;
@@ -17,6 +18,7 @@ public class Main
 
     public static Window window;
     public static MainPanel panel;
+    public static House house;
     public static int timerCounter = 0;
     public static int panelSizeX = 1500, panelSizeY = 900;
     public static Tower tower = new Tower();
@@ -25,6 +27,7 @@ public class Main
     {
         window = new Window();
         panel = new MainPanel();
+        house = new House();
 
         setupGame();
     }
@@ -33,7 +36,13 @@ public class Main
     {
         window.add(panel);
         panel.setup();
+
+        panel.add(house);
+        house.setup();
+
+        //End
         window.setup();
+
         Thread timer = new Thread(new Runnable()
         {
             public void run()
