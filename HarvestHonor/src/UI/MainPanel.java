@@ -6,7 +6,7 @@ import java.awt.*;
 public class MainPanel extends JPanel
 {
 
-    public static Image image = new ImageIcon(MainPanel.class.getResource("/Bilder/gräs.png")).getImage();
+    public static Image image = new ImageIcon(MainPanel.class.getResource("/Images/Grass.png")).getImage();
 
     public void setup()
     {

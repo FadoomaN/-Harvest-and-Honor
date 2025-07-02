@@ -1,9 +1,6 @@
 import UI.MainPanel;
 import UI.Window;
-import Units.Building;
-
-import javax.swing.*;
-import java.awt.*;
+import UI.House;
 
 /**
  *  Daniel, Fadi, Raymi, Mohmad
@@ -15,13 +12,13 @@ public class Main
 
     public static Window window;
     public static MainPanel panel;
-    public static Building building;
+    public static House building;
 
     public static void main(String[] args)
     {
         window = new Window();
         panel = new MainPanel();
-        building = new Building();
+        building = new House();
 
         setupGame();
     }
@@ -30,8 +27,10 @@ public class Main
     {
         window.add(panel);
         panel.setup();
-        window.setup();
+
+        panel.add(building);
         building.setup();
 
+        window.setup();
     }
 }
